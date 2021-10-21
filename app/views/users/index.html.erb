@@ -1,3 +1,6 @@
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
 <% @users.each do |e| %>
   <p>
     <%= e.uid %>
