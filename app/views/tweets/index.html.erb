@@ -1,7 +1,8 @@
 
 <% if flash[:notice] %>
   <%= flash[:notice] %>
-<% end %><% @tweets.each do |e| %>
+<% end %>
+<% @tweets.each do |e| %>
   <p>
     <%= e.message %>
     <% if current_user %>
